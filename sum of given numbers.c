@@ -6,7 +6,7 @@ int main()
 	while (n>0)
 	{
 		r=n%10;
-		sum=sum+r;
+		if(r>sum)sum=r;
 		n=n/10;
 	}
 	printf("%d",sum);
